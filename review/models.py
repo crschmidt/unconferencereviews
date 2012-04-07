@@ -8,6 +8,8 @@ class Session(models.Model):
 class Tweet(models.Model):
     tweet_id = models.CharField(max_length=255)
     session = models.ForeignKey(Session)
+    cached_text = models.CharField(max_length=200)
+    username = models.CharField(max_length=255)
 
 class Link(models.Model):
     url = models.TextField()

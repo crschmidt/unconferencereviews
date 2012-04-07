@@ -1,3 +1,3 @@
 from django.contrib import admin
-from main.models import *
+from review.models import *
 admin.site.register(Session)
