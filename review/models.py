@@ -6,7 +6,7 @@ class Session(models.Model):
     topic = models.CharField(max_length=255)
 
 class Tweet(models.Model):
-    id = models.CharField(max_length=255)
+    tweet_id = models.CharField(max_length=255)
     session = models.ForeignKey(Session)
 
 class Link(models.Model):
