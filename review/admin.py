@@ -1,3 +1,3 @@
 from django.contrib import admin
-from review.models import *
+from unconferencereviews.review.models import *
 admin.site.register(Session)
